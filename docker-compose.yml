@@ -1,0 +1,15 @@
+services:
+  localmap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8101:8101"
+    environment:
+      - LM_MAP_LAT_DD=47.62155335517305
+      - LM_MAP_LON_DD=-122.3495095751273
+      - LM_MAP_ZOOM=12
+      - LM_AISCATCHER_URL=http://localhost:8100
+      - LM_CACHEDMAP_QUERY=profile=trmnl_v1_alias
+      - LM_CACHEDMAP_TTL=30s
+      - LM_ADDR=:8101

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>localmap routes page</title>
+    </head>
+    <body>
+        <header style="background-color:rgb(69, 203, 247); padding:1em;">
+            <h2>localmap Routes</h2>
+        </header>
+        <main>
+            <h3>Live testing pages (renders every time)</h3>
+            <ul>
+                <li><a href="/map/html"><code>/map/html</code></a> HTML map for live testing.</li>
+                <li><a href="/map/png"><code>/map/png</code></a> PNG map for live testing.</li>
+                <li><a href="/map/png?profile=trmnl_v1_alias"><code>/map/png?profile=trmnl_v1_alias</code></a> TRMNL v1 compatible live map</li>
+            </ul>
+            <h3>Pre-computed pages (refreshed periodically)</h3>
+            <ul>
+                <li><a href="/cachedmap/png?profile=trmnl_v1_alias"><code>/cachedmap/png?profile=trmnl_v1_alias</code></a> Pre-computed map for display on TRMNL</li>
+            </ul>
+            <h3>Utility pages</h3>
+            <ul>
+                <li><a href="/healthz"><code>/healthz</code></a> Health check.</li>
+            </ul>
+        </main>
+    </body>
+</html>
